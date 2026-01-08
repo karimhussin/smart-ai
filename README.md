@@ -1,20 +1,83 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# مغسلة الجبر المحدودة - النظام الصوتي الذكي 🎤
 
-# Run and deploy your AI Studio app
+نظام تواصل ذكي مع واجهة صوتية باللغة العربية مدعوم بتقنية Google Gemini AI.
 
-This contains everything you need to run your app locally.
+## 🚀 التشغيل السريع
 
-View your app in AI Studio: https://ai.studio/apps/drive/1wGiOHTCxS0DYsLXB4CwWZ2Aw8xd-aJOW
+### المتطلبات الأساسية
+- Node.js 20 أو أحدث
+- Google Gemini API Key ([احصل عليه من هنا](https://makersuite.google.com/app/apikey))
+- متصفح Chrome أو Edge (للحصول على أفضل دعم للصوت العربي)
 
-## Run Locally
+### خطوات التشغيل
 
-**Prerequisites:**  Node.js
+1. **تثبيت الحزم**
+```bash
+npm install
+```
 
+2. **إعداد API Key**
+افتح ملف `.env.local` وأضف مفتاح Google Gemini API:
+```bash
+GEMINI_API_KEY=your_api_key_here
+VITE_GEMINI_API_KEY=your_api_key_here
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. **تشغيل المشروع**
+```bash
+npm run dev
+```
+
+4. **افتح المتصفح**
+```
+http://localhost:3000
+```
+
+## 🎯 كيفية الاستخدام
+
+### الواجهة الرئيسية
+- **بدء المكالمة**: للتحدث مع المساعد الصوتي
+- **البيانات**: لتحرير معلومات الشركة والأقسام (يتطلب تسجيل دخول)
+
+### تسجيل الدخول
+**كلمة المرور الافتراضية:** `admin2024` أو `الجبر2024`
+
+### الواجهة الصوتية
+1. اضغط على زر الميكروفون 🎤
+2. اسمح للمتصفح بالوصول إلى الميكروفون
+3. تحدث باللغة العربية بوضوح
+4. سيرد المساعد صوتياً وكتابياً
+
+## 📦 الأوامر المتاحة
+
+```bash
+npm run dev      # تشغيل السيرفر للتطوير (المنفذ 3000)
+npm run build    # بناء المشروع للإنتاج
+npm run preview  # معاينة النسخة المبنية
+```
+
+## 🏗️ البناء للإنتاج
+
+```bash
+npm run build
+# المخرجات ستكون في مجلد dist/
+```
+
+## 🔧 التقنيات المستخدمة
+
+- React 19 + TypeScript
+- Vite 6
+- Google Gemini AI (2.0 Flash)
+- Web Speech API
+- Tailwind CSS
+
+## 🔐 ملاحظات أمنية
+
+⚠️ **مهم:**
+- لا تشارك مفتاح API
+- لا ترفع `.env.local` على Git
+- غيّر كلمة المرور في الإنتاج
+
+---
+
+**النسخة:** 2.8 | **آخر تحديث:** 2026-01-08
