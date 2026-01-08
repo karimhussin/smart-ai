@@ -1,0 +1,7 @@
+{
+  "name": "Smart Voice Secretary AI",
+  "description": "An advanced AI voice secretary that handles calls based on a specific knowledge base using real-time audio streaming.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
